@@ -219,6 +219,9 @@ img{
         grid-column: 3/4;
         grid-row: 3/5;
     }
+    img {
+        width: clamp(1.5rem, 300px, 4rem);
+    }
 }
 
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
@@ -260,21 +263,24 @@ img{
     #seven, #eight{
         grid-row: 3/4;
     } 
+    img {
+        width: clamp(2rem, 350px, 5rem);
+    }
 }
 
 /* --------------- END LARGE SCREEN SIZES --------------- */
 
-
-
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
     img{
-        width: clamp(1rem, 300px, 3rem);
+        width: clamp(1rem, 250px, 3rem);
         height: auto;
     }
+
+    /* looked for something that would only require this space to make image responsive. 
+    All suggestions and resources said to make adjustments by media query, buy that would require more
+    thank this section. I will provide the code for the query by query method, but please advise. */
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
-
-
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
@@ -344,6 +350,9 @@ img{
 
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
+    }
+    img {
+        width: clamp(2.5rem, 400px, 6rem);
     }
 }
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
